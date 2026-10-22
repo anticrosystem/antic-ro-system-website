@@ -1,7 +1,7 @@
-ANTIC R.O SYSTEM — Premium Blue & White Website
+ANTIC R.O SYSTEM — Premium Blue & White redesign
 
-Open index.html to preview locally. This is a static multi-page website. Existing pages are retained and share the refreshed responsive stylesheet.
+10 linked pages with responsive styling: Home, About, Products, Services, AMC Plans, Offers, Gallery, Reviews, FAQ and Contact.
 
-Before publishing: verify phone/WhatsApp number, upload your real logo into assets/antic-ro-system-logo.png (the homepage has a text fallback), add actual product photos and approved prices, confirm the ₹111 offer wording, and configure any desired booking/form integration. The WhatsApp buttons open a prefilled WhatsApp message; no backend booking system is connected.
+Open index.html to preview. Phone/WhatsApp links use +91 90160 94313.
 
-Pages: Home, About, Products, Sales & Service, AMC, Offers, Gallery, Reviews, FAQ, Contact.
+Before publishing: confirm offer terms, add authentic product/shop photos and verify business details. Booking currently opens WhatsApp; no booking database/backend is connected.
