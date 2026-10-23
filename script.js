@@ -57,9 +57,9 @@ if(serviceForm){
 
 // V17: ANTIC R.O SYSTEM three-banner carousel. Auto-advances every 5 seconds and pauses on interaction.
 (()=>{
-  const carousel=document.querySelector('.purixa-carousel');
+  const carousel=document.querySelector('.antic-carousel');
   if(!carousel) return;
-  const slides=Array.from(carousel.querySelectorAll('.purixa-slide'));
+  const slides=Array.from(carousel.querySelectorAll('.antic-slide'));
   const dots=Array.from(carousel.querySelectorAll('.carousel-dot'));
   const prev=carousel.querySelector('.carousel-prev');
   const next=carousel.querySelector('.carousel-next');

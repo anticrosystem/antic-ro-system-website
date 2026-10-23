@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-# Replace the placeholder sitemap URL after choosing your GitHub Pages address.
