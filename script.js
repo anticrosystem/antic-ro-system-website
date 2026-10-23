@@ -29,11 +29,14 @@ if(serviceForm){
     event.preventDefault();
     const name=document.getElementById("customerName").value.trim();
     const mobile=document.getElementById("customerMobile").value.trim();
+    const address=document.getElementById("customerAddress").value.trim();
     const area=document.getElementById("customerArea").value.trim();
+    const brand=document.getElementById("roBrand").value.trim();
+    const model=document.getElementById("roModel").value.trim();
     const types=Array.from(document.querySelectorAll('input[name="serviceType"]:checked')).map(input=>input.value);
     const message=document.getElementById("serviceMessage").value.trim();
-    if(!name||!area||types.length===0){
-      alert("Please complete your name, area and service type.");
+    if(!name||!address||!area||types.length===0){
+      alert("Please complete your name, full address, area and select at least one service.");
       return;
     }
     if(!/^[0-9]{10}$/.test(mobile)){
@@ -44,7 +47,10 @@ if(serviceForm){
       "Hello ANTIC R.O SYSTEM, I want to book RO service.",
       `Name: ${name}`,
       `Mobile: ${mobile}`,
-      `Area: ${area}`,
+      `Full address: ${address}`,
+      `Area / locality: ${area}`,
+      `RO brand: ${brand || "Not specified"}`,
+      `RO model: ${model || "Not specified"}`,
       `Services: ${types.join(", ")}`,
       `Requirement: ${message || "Not specified"}`
     ].join("\n");
@@ -57,9 +63,9 @@ if(serviceForm){
 
 // V17: ANTIC R.O SYSTEM three-banner carousel. Auto-advances every 5 seconds and pauses on interaction.
 (()=>{
-  const carousel=document.querySelector('.antic-carousel');
+  const carousel=document.querySelector('.purixa-carousel');
   if(!carousel) return;
-  const slides=Array.from(carousel.querySelectorAll('.antic-slide'));
+  const slides=Array.from(carousel.querySelectorAll('.purixa-slide'));
   const dots=Array.from(carousel.querySelectorAll('.carousel-dot'));
   const prev=carousel.querySelector('.carousel-prev');
   const next=carousel.querySelector('.carousel-next');
